@@ -69,19 +69,22 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      * 初始化控件
      * 子类查找控件,必须在initView方法中
      */
-    public abstract void initView();
+    public void initView() {
+    }
 
     /**
      * 初始化数据
      * 子类所有的初始化数据操作,必须在initData方法中
      */
-    public abstract void initData();
+    public void initData() {
+    }
 
     /**
      * 初始化监听
      * 子类所有的监听设置,必须在initListener方法中
      */
-    public abstract void initListener();
+    public void initListener() {
+    }
 
     /**
      * 注册相同监听
@@ -96,7 +99,6 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 
     @Override
     public void onClick(View v) {
-
         switch (v.getId()) {
             case R.id.back:  //返回按钮
                 finish();
@@ -106,7 +108,6 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
                 onInnerClick(v);
                 break;
         }
-
     }
 
     /**
