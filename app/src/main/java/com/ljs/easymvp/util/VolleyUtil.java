@@ -20,7 +20,7 @@ public class VolleyUtil {
 
     private static RequestQueue queue;
 
-    {
+    static {
         queue = Volley.newRequestQueue(ProApplication.getInstance());
     }
 
